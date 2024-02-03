@@ -3,9 +3,27 @@ import { Grid, Typography } from "@mui/material";
 
 const About = () => {
   return (
-    <Grid container>
+    <Grid
+      container
+      direction="column"
+      justifyContent="center"
+      alignItems="center"
+    >
       <Grid item>
-        <Typography variant="h1">About Me</Typography>
+        <Typography variant="h1" color="white" marginBottom="50px">
+          About Me
+        </Typography>
+      </Grid>
+      <Grid item width="33%">
+        <Typography variant="h5" color="white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Typography>
       </Grid>
     </Grid>
   );
