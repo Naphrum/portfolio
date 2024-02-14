@@ -1,5 +1,6 @@
 import React from "react";
-import { Grid, Button } from "@mui/material";
+import { Grid, Button, IconButton } from "@mui/material";
+import HomeIcon from "@mui/icons-material/Home";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -15,6 +16,13 @@ const Navbar = () => {
       spacing="10px"
       marginBottom="80px"
     >
+      <Grid item justifyContent="flex-start">
+        <Link to="/">
+          <IconButton aria-label="home">
+            <HomeIcon color="primary" />
+          </IconButton>
+        </Link>
+      </Grid>
       <Grid item>
         <Link to="/about-me">
           <Button>About Me</Button>

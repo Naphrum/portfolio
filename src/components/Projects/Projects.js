@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <Grid container direction="column" justifyContent="center" alignItems="center">
         <Grid item>
-            <Typography variant="h1" color="white" marginBottom="50px">Projects</Typography>
+            <Typography variant="h2" textAlign="center" marginBottom="50px">Projects</Typography>
         </Grid>
     </Grid>
   )
