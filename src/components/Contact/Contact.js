@@ -27,11 +27,13 @@ const Contact = () => {
       container
       spacing={{ xs: 3, md: 6 }}
       sx={{
-        "& .MuiTextField-root": { m: 1, width: "45ch" },
+        "& .MuiTextField-root": { m: 1, width: "35ch" },
+        overflow: "hidden"
       }}
       direction="column"
       justifyContent="center"
       alignItems="center"
+      
     >
       <form ref={form} onSubmit={sendEmail}>
         <Grid item>

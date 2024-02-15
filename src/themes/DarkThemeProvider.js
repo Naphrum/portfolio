@@ -1,31 +1,37 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 
-
 const theme = createTheme({
-    palette: {
-        mode: "dark",
-        
-        primary: {
-            main: '#61d89f',
+  components: {
+    MuiDrawer: {
+      styleOverrides: {
+        paper: {
+          backgroundColor: "#03875b",
         },
-        secondary: {
-            main: '#d8619b'
-        },
-        background: {
-            default: '#0A0A0A',
-            paper: '#333333',
-        }
+      },
     },
-    shape: {
-        borderRadius: 12,
+  },
+  palette: {
+    mode: "dark",
+
+    primary: {
+      main: "#61d89f",
     },
-    spacing: 4,
+    secondary: {
+      main: "#d8619b",
+    },
+    background: {
+      default: "#0A0A0A",
+      paper: "#333333",
+    },
+  },
+  shape: {
+    borderRadius: 12,
+  },
+  spacing: 4,
 });
 
-const DarkThemeProvider = ({
-  children,
-}) => {
+const DarkThemeProvider = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
