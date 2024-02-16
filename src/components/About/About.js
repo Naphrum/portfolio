@@ -35,7 +35,7 @@ const About = () => {
           <Typography variant="h4" color="primary">
             Skills
           </Typography>
-          <ul>
+          <ul display="flex" alignItems="center" justifyContent="center">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>

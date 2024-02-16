@@ -6,50 +6,58 @@ import {
   ListItemText,
   IconButton,
   Grid,
-  Divider
+  Divider,
+  Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const CollapsedNavbar = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
+  const navigate = useNavigate();
+  const handleNavigate = (route) => {
+    navigate(route);
+    setOpenDrawer(false);
+  };
   return (
     <>
-      <Drawer 
+      <Drawer
         anchor="top"
         open={openDrawer}
         onClose={() => setOpenDrawer(false)}
         width="100vw"
       >
-        <List justifyContent='center' alignItems='center'>
-          <ListItem onClick={() => setOpenDrawer(false)}>
+        <List>
+          <ListItem onClick={() => handleNavigate()}>
             <ListItemText>
-              <Link style={{textDecoration: "none", color: "#fff"}} path="/">HOME</Link>
+              <Typography textAlign="center">HOME</Typography>
+            </ListItemText>
+          </ListItem>
+          <Divider />
+          <ListItem onClick={() => handleNavigate("about-me")}>
+            <ListItemText>
+              <Typography textAlign="center">ABOUT ME</Typography>
+            </ListItemText>
+          </ListItem>
+          <Divider />
+          <ListItem onClick={() => handleNavigate("projects")}>
+            <ListItemText>
+              <Typography textAlign="center">PROJECTS</Typography>
+            </ListItemText>
+          </ListItem>
+          <Divider />
+          <ListItem onClick={() => handleNavigate("contact")}>
+            <ListItemText>
+              <Typography textAlign="center">CONTACT</Typography>
             </ListItemText>
           </ListItem>
           <Divider />
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link style={{textDecoration: "none", color: "#fff"}} path="/about-me">ABOUT ME</Link>
-            </ListItemText>
-          </ListItem>
-          <Divider />
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <ListItemText>
-              <Link style={{textDecoration: "none", color: "#fff"}} path="/projects">PROJECTS</Link>
-            </ListItemText>
-          </ListItem>
-          <Divider />
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <ListItemText>
-              <Link style={{textDecoration: "none", color: "#fff"}} path="/contact">CONTACT</Link>
-            </ListItemText>
-          </ListItem>
-          <Divider />
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <ListItemText>
-              <CloseIcon />
+              <Typography textAlign="center" >
+                <CloseIcon />
+              </Typography>
             </ListItemText>
           </ListItem>
         </List>
