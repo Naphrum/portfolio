@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const CollapsedNavbar = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -29,7 +29,7 @@ const CollapsedNavbar = () => {
         width="100vw"
       >
         <List>
-          <ListItem onClick={() => handleNavigate()}>
+          <ListItem onClick={() => handleNavigate("")}>
             <ListItemText>
               <Typography textAlign="center">HOME</Typography>
             </ListItemText>
@@ -64,7 +64,7 @@ const CollapsedNavbar = () => {
       </Drawer>
       <Grid
         container
-        padding="45px 75px"
+        padding="45px 50px"
         direction="row"
         justifyContent="flex-end"
         alignItems="center"

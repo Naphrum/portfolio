@@ -24,7 +24,7 @@ const About = () => {
         spacing={14}
       >
         <Grid item xs={10} md={4} minWidth="33%">
-          <Typography variant="h6" color="white">
+          <Typography>
             I am a student Web Developer with HTMElephant that is always looking
             to make something new! I love working on projects and I'm always
             looking to start a new one. I have dabbled in music production,
