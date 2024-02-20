@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.4a43a4c1.css",
+    "main.js": "/portfolio/static/js/main.dfda263b.js",
+    "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
+    "static/media/vanorman.jpg": "/portfolio/static/media/vanorman.43087925d8d15b494038.jpg",
+    "static/media/cartridge-shelf.png": "/portfolio/static/media/cartridge-shelf.22818b011008b7c2903f.png",
+    "static/media/open-kitchen.png": "/portfolio/static/media/open-kitchen.34c86742e776d59bbe0e.png",
+    "static/media/logo.svg": "/portfolio/static/media/logo.d6b882af2a494136e25e15f7cd903c55.svg",
+    "index.html": "/portfolio/index.html",
+    "main.4a43a4c1.css.map": "/portfolio/static/css/main.4a43a4c1.css.map",
+    "main.dfda263b.js.map": "/portfolio/static/js/main.dfda263b.js.map",
+    "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a43a4c1.css",
+    "static/js/main.dfda263b.js"
+  ]
+}
