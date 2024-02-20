@@ -9,7 +9,7 @@ const About = () => {
       direction="column"
       justifyContent="center"
       alignItems="center"
-      spacing={4}
+
     >
       <Grid item xs={12}>
         <Typography variant="h2" textAlign="center" marginBottom="50px">
@@ -25,10 +25,10 @@ const About = () => {
       >
         <Grid item xs={10} md={4} minWidth="33%">
           <Typography>
-            I am a student Web Developer with HTMElephant that is always looking
-            to make something new! I love working on projects and I'm always
-            looking to start a new one. I have dabbled in music production,
-            soldering, game dev, and pc building and enjoy trying out new things.
+            I am a web developer with HTMElephant that is always looking to make
+            something new! I love working on projects and I'm always looking to
+            start a new one. I enjoy music production, game dev and trying out
+            new things.
           </Typography>
         </Grid>
         <Grid item xs={10} md={2}>

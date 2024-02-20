@@ -10,7 +10,6 @@ const Landing = () => {
     <Grid
       container
       direction="column"
-      justifyContent="center"
       alignItems="center"
     >
       {isMobile ? (
@@ -35,7 +34,6 @@ const Landing = () => {
             options={{
               strings: [
                 "Web Developer",
-                "Software Engineer",
                 "Student",
                 "CAD PV Engineer",
               ],
